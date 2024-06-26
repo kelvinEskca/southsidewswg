@@ -17,7 +17,7 @@
                 <SwiperSlide v-for="slider in sliders">
                     <div v-if="slider.link">
                         <a :href="slider.link">
-                            <img class="w-full rounded-2xl" :src="slider.image" alt="banner" >
+                            <img class="w-full rounded-2xl" :src="slider.image" alt="" >
                         </a>
                     </div>
                     <div v-else>
