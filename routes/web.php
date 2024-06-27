@@ -39,3 +39,25 @@ Route::prefix('payment')->name('payment.')->middleware(['installed'])->group(fun
     Route::match(['get', 'post'], '/{paymentGateway:slug}/{order}/cancel', [PaymentController::class, 'cancel'])->name('cancel');
     Route::get('/successful/{order}', [PaymentController::class, 'successful'])->name('successful');
 });
+
+Route::get('/clearer', function(){
+    \Illuminate\Support\Facades\Artisan::call('view:clear');
+                $result = \Illuminate\Support\Facades\Artisan::output();
+                dump($result);
+
+                \Illuminate\Support\Facades\Artisan::call('route:clear');
+                $result = \Illuminate\Support\Facades\Artisan::output();
+                dump($result);
+
+                \Illuminate\Support\Facades\Artisan::call('cache:clear');
+                $result = \Illuminate\Support\Facades\Artisan::output();
+                dump($result);
+
+                \Illuminate\Support\Facades\Artisan::call('config:clear');
+                $result = \Illuminate\Support\Facades\Artisan::output();
+                dump($result);
+
+                \Illuminate\Support\Facades\Artisan::call('config:cache');
+                $result = \Illuminate\Support\Facades\Artisan::output();
+                dump($result);
+})->name('call.run');
