@@ -94,6 +94,7 @@
                 </div>
             </div>
         </div>
+
         <div class="pt-4 pb-24 lg:py-4 mt-8 text-center border-t border-white/5">
             <p class="text-xs font-medium text-white">{{ setting.site_copyright }}</p>
         </div>
