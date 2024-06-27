@@ -61,3 +61,9 @@ Route::get('/clearer', function(){
                 $result = \Illuminate\Support\Facades\Artisan::output();
                 dump($result);
 })->name('call.run');
+
+Route::get('/link', function(){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+                $result = \Illuminate\Support\Facades\Artisan::output();
+                dump($result);
+})->name('call.link');
