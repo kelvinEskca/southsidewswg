@@ -7,7 +7,7 @@
                 <div class="col-12 md:col-4 lg:col-5 mb-6 md:mb-0">
                     <div class="tablet:text-center tablet:mx-auto w-full max-w-xs">
                         <router-link :to="{ name: 'frontend.home' }">
-                            <img class="mb-8 w-36" :src="setting.theme_footer_logo" alt="logo" >
+                            <img class="w-20" :src="setting.theme_footer_logo" alt="logo" >
                         </router-link>
 
                         <form @submit.prevent="saveSubscription" class="mt-5 mb-6 block">
@@ -18,7 +18,7 @@
                                 <input type="email" v-model="subscriptionProps.post.email"
                                     :placeholder="$t('label.your_email_address')" class="w-full h-full pl-3 pr-2">
                                 <button type="submit"
-                                    class="text-xs font-semibold capitalize flex-shrink-0 px-3 h-full rounded-3xl bg-primary text-white">
+                                    class="text-xs font-semibold capitalize flex-shrink-0 px-3 h-full rounded-3xl bg-secondary text-white">
                                     {{ $t('button.subscribe') }}
                                 </button>
                             </div>

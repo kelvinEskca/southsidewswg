@@ -4,7 +4,7 @@
 
 @layer base {
     :root {
-        --primary: 242 62 20;
+        --primary: "#767982";
         --primary-light: 255 237 244;
         --primary-slate: 255 244 241;
         --client-font: 'Urbanist', sans-serif;
@@ -212,7 +212,7 @@
               ADMIN SIDE PART START
     ====================================*/
     /* HEADER */
-    .db-header { @apply fixed top-0 left-0 z-30 w-full p-4 flex items-center justify-between lg:gap-36 bg-white transition }
+    .db-header { @apply fixed top-0 left-0 z-30 w-full p-4 flex items-center justify-between lg:gap-36 bg-white transition h-16 }
     .db-header-left { @apply flex items-center w-full md:gap-36 }
     .db-header-right { @apply flex-shrink-0 w-fit flex items-center gap-2.5 sm:gap-4 }
     .db-header-logo { @apply flex-auto w-28 flex-shrink-0 }
@@ -300,7 +300,7 @@
     .invalid { @apply !border-red-300 before:!bg-red-300 }
 
     /* MAIN CONTENT */
-    .db-main { @apply px-3 sm:px-4 pb-4 xh:pt-[170px] pt-[80px] lg:pt-[84px] ltr:lg:pl-[280px] rtl:lg:pr-[280px] ltr:lg:pr-5 rtl:lg:pl-5 lg:pb-5 h-screen overflow-y-auto transition text-paragraph bg-[#f7f7fc] }
+    .db-main { @apply px-3 sm:px-4 pb-4 xh:pt-[170px] pt-[80px] lg:pt-[80px] ltr:lg:pl-[280px] rtl:lg:pr-[280px] ltr:lg:pr-5 rtl:lg:pl-5 lg:pb-5 h-screen overflow-y-auto transition text-paragraph bg-[#f7f7fc] }
     .db-main.expand { @apply ltr:lg:pl-5 rtl:lg:pr-5 }
 
     /* BACKLDROP */

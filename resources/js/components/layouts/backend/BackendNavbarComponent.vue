@@ -2,7 +2,7 @@
     <div class="backdrop"></div>
     <header class="db-header">
         <router-link class="w-32 flex-shrink-0" :to="{ name: 'frontend.home' }">
-            <img class="w-full" :src="setting.theme_logo" alt="logo">
+            <img class="w-full" :src="setting.theme_logo" alt="logos" style="width: 4.5rem;" />
         </router-link>
         <div class="flex items-center justify-end w-full gap-4">
             <div

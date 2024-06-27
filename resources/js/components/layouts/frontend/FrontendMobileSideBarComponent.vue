@@ -4,7 +4,7 @@
             <div class="py-4 flex items-center justify-between px-4 border-b border-slate-100">
                 <router-link :to="{ name: 'frontend.home' }"
                              class="router-link-active router-link-exact-active flex-shrink-0">
-                    <img class="w-28 sm:w-32" :src="setting.theme_logo" alt="logo">
+                    <img class="w-20 sm:w-20" :src="setting.theme_logo" alt="logo">
                 </router-link>
 
                 <button type="button">

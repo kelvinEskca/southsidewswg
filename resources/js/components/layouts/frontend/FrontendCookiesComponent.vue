@@ -1,5 +1,5 @@
 <template>
-    <div v-if="status && setting.cookies_summary"  :class="activeClass" 
+    <div v-if="status && setting.cookies_summary"  :class="activeClass"
         class=" translate-y-0 w-full max-w-full sm:max-w-xs p-4 fixed bottom-0 ltr:left-0 rtl:right-0 sm:bottom-6 ltr:sm:left-6 rtl:sm:right-6 z-50 rounded-t-2xl sm:rounded-2xl shadow-cookies bg-white transition-all duration-500">
         <div class="flex items-center gap-2 mb-4">
             <i class="lab-fill-cookie-bite text-heading"></i>
@@ -13,10 +13,10 @@
                 class="w-full h-[38px] rounded-r ltr:rounded-l-3xl rtl:rounded-r-3xl tracking-wide text-center font-bold capitalize border border-[#D9DBE9] bg-white text-heading">{{
                     $t('button.decline') }}</button>
             <button @click.prevent="change(true)" type="button"
-                class="w-full h-[38px] rounded-l ltr:rounded-r-3xl rtl:rounded-l-3xl tracking-wide text-center font-bold capitalize border border-primary bg-primary text-white">{{
+                class="w-full h-[38px] rounded-l ltr:rounded-r-3xl rtl:rounded-l-3xl tracking-wide text-center font-bold capitalize border border-[#101010] bg-secondary text-white">{{
                     $t('button.accept') }}</button>
         </div>
-        <router-link v-if="slug !== 'not-found'" class="capitalize text-sm leading-6 underline text-primary"
+        <router-link v-if="slug !== 'not-found'" class="capitalize text-sm leading-6 underline text-secondary"
                      :to="{ name : 'frontend.page', params: {slug: slug} }">
             {{ $t('label.cookies_settings') }}
         </router-link>

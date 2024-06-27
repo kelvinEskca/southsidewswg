@@ -82,8 +82,8 @@ class MenuTableSeeder extends Seeder
                 ]
             ],
             [
-                'name'       => 'Pos & Orders',
-                'language'   => 'pos_and_orders',
+                'name'       => 'Orders',
+                'language'   => 'orders',
                 'url'        => '#',
                 'icon'       => 'lab lab-pos',
                 'priority'   => 100,
@@ -91,27 +91,6 @@ class MenuTableSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
                 'children'   => [
-                    [
-                        'name'       => 'POS',
-                        'url'        => 'pos',
-                        'language'   => 'pos',
-                        'icon'       => 'lab lab-line-pos',
-                        'priority'   => 100,
-                        'status'     => 1,
-                        'created_at' => now(),
-                        'updated_at' => now()
-
-                    ],
-                    [
-                        'name'       => 'POS Orders',
-                        'language'   => 'pos_orders',
-                        'url'        => 'pos-orders',
-                        'icon'       => 'lab lab-line-push-notification',
-                        'priority'   => 100,
-                        'status'     => 1,
-                        'created_at' => now(),
-                        'updated_at' => now()
-                    ],
                     [
                         'name'       => 'Online Orders',
                         'language'   => 'online_orders',
