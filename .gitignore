@@ -17,7 +17,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-public/js/*js
 /storage/media-library
 storage/media-library
 */storage/media-library
